@@ -9,7 +9,7 @@ source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.
 GIT_PS1_SHOWDIRTYSTATE=true
 
 # prompt
-#export PS1="[\h: \w$ (__git_ps1)]\n$ "
+export PS1='\e[1;36m\u\e[m: \e[1;35m\w\e[m$ '
 
 # TMUX
 alias tmxs='tmux switch -t $l'
