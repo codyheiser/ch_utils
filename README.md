@@ -4,9 +4,9 @@ Profile and aliases for shell, setup of Python environment
 
 #### Setting up a new environment (Mac OSX):
 Get `virtualenv` and `virtualenvwrapper` going, along with `autoenv` magic.
->`brew install virtualenv` 
->`brew install virtualenvwrapper` 
->`brew install autoenv` 
+>`brew install virtualenv`   
+>`brew install virtualenvwrapper`   
+>`brew install autoenv`  
 
 To create a new virtual environment:
 >`mkvirtualenv <env_name>`
@@ -14,7 +14,7 @@ To create a new virtual environment:
 To source a virtual environment:
 >`workon <env_name>`
 
-**NOTE:** pip only works when a virtual environment is active.  To override and install a Python package to the global environment, use `gpip3 install <package_name>` 
+**NOTE:** pip only works when a virtual environment is active.  To override and install a Python package to the global environment, use `gpip3 install <package_name>`  
 
 
 ##### Using `autoenv`
