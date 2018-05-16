@@ -23,7 +23,11 @@ gpip3(){
 	PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
 }
 
+# turn on autoenv
+source /usr/local/opt/autoenv/activate.sh
+
 # source shell aliases
 if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
+
