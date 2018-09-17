@@ -9,7 +9,7 @@ source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.
 GIT_PS1_SHOWDIRTYSTATE=true
 
 # prompt
-export PS1='\e[1;36m\u\e[m: \e[1;35m\w\e[m$ '
+export PS1='\n\e[1;36m\u\e[m: \e[1;35m\w\e[m\n$ '
 
 # activate virtual env wrapper
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
@@ -25,6 +25,7 @@ gpip3(){
 
 # turn on autoenv
 source /usr/local/opt/autoenv/activate.sh
+export AUTOENV_ENABLE_LEAVE='true'
 
 # source shell aliases
 if [ -f ~/.bash_aliases ]; then
