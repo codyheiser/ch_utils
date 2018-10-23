@@ -8,8 +8,12 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 
+parse_git_branch() {
+	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
 # prompt
-export PS1='\n\e[1;36m\u\e[m: \e[1;35m\w\e[m\n$ '
+export PS1='\n\e[1;36m\u\e[m: \e[1;35m\w\e[m $(parse_git_branch)\n$ '
 
 # activate virtual env wrapper
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
